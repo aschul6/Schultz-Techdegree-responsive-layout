@@ -158,6 +158,11 @@ nav h1 {
   flex-direction: column;
 }
 
+.digits p {
+  margin: 5px;
+  padding: 0;
+}
+
 .top,
 .bottom {
   display: flex;
