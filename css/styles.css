@@ -1,0 +1,256 @@
+
+/*======Fonts==================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;900&display=swap');
+
+/*======Base Element Styles====================*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  font-family: 'Fira Sans','Helvetica','Calibri', sans-serif;
+  color: black;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin-top: 5px;
+  padding: 10px;
+  background-color: white;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+  padding: 10px;
+}
+
+h2,
+h3 {
+  padding: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav,
+header,
+.contact,
+footer {
+  background-color: rgb(250, 250, 250);
+}
+
+/*======Navigation=============================*/
+
+nav,
+.top-nav {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+
+nav h1 {
+  flex-grow: 1;
+  padding: 15px;
+  align-self: center;
+}
+
+.top-nav {
+  text-align: center;
+}
+
+/*======Header=================================*/
+
+.header {
+  display: flex;
+}
+.profile {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.profilepic {
+  flex: 1;
+  margin: 0;
+  max-width: 400px;
+  padding: 30px;
+}
+
+.bio {
+  flex: 1;
+  margin: 0;
+  padding: 20px
+}
+
+/*======Portfolio==============================*/
+
+.header {
+  display: flex;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 10px;
+  margin: 0 auto;
+  font-family: 'Helvetica','Calibri', sans-serif;
+}
+
+.col {
+  margin: 10px;
+  min-height: 250px;
+  color: black;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-top: 5px;
+}
+
+.portfolio {
+  text-align: center;
+}
+
+.portfolio img {
+	max-width: 300px;
+}
+
+.box-1 {
+  flex-grow: 1;
+}
+.box-2 {
+  flex-grow: 1;
+}
+.box-3 {
+  flex-grow: 1;
+}
+.box-4 {
+  flex-grow: 1;
+}
+.box-5 {
+  flex-grow: 1;
+}
+.box-6 {
+  flex-grow: 1;
+}
+
+/*======Contact=================================*/
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  text-align: center;
+}
+
+.digits {
+  display: flex;
+  flex-direction: column;
+}
+
+.top,
+.bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.phone,
+.email {
+  font-weight: bold;
+}
+
+/*======Footer=================================*/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+footer h2 {
+  flex-grow: 1;
+}
+.footer-nav {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  align-self: center;
+}
+.full {
+  display: none;
+}
+
+/*======Media Inquiries========================*/
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    font-size: x-large;
+  }
+  .nav,
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+  }
+  .top-nav {
+    align-self: center;
+    padding-top: 0;
+  }
+  .nav h1 {
+    flex-grow: 1;
+  }
+  .footer-nav h1,
+  .footer-nav li,
+  .topnav h1,
+  .top-nav li,
+  .digits li {
+    background-color: rgb(250, 250, 250);
+  }
+  .header {
+    display: flex;
+  }
+  .profile {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .col {
+    flex-basis: calc(50% - 20px);
+  }
+  .full {
+    display: flex;
+  }
+  .footer-nav {
+    flex-direction: row;
+    justify-content: right;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  
+  nav {
+    flex-direction: row;
+  }
+  .portfolio {
+    max-width: 1600px;
+    align-self: center;
+  }
+  .col {
+    flex-basis: calc(33.333% - 20px);
+  }
+}
